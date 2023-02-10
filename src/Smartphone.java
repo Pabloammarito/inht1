@@ -1,5 +1,5 @@
 
-public class Smartphone extends Computer {
+class Smartphone extends Computer {
     public String brand;
     public String model;
     public int year;
@@ -7,9 +7,15 @@ public class Smartphone extends Computer {
 
         public String operatingSystem;
 
-        public SmartPhone(String brand, String model, int year, String operatingSystem) {
-            super(brand, model, year);
-            this.operatingSystem = operatingSystem;
+    public Smartphone(String brand, String model, int year) {
+        super(brand, model, year);
+    }
+
+    public void SmartPhone(String brand, String model, int year, String operatingSystem) {
+            this.brand = brand;
+            this.model =model;
+            this.year = year;
+
         }
 
         public void displayBrandAndModel() {

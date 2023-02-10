@@ -15,8 +15,7 @@ public class Computer {
         System.out.println("Brand: " + this.brand + "\nModel: " + this.model + "\nYear: " + this.year);
     }
 
-    public void displayYear() {
-        System.out.println("Year: " + this.year);
+    public void displayYear() {System.out.println("Year: " + this.year);
     }
 
 }
