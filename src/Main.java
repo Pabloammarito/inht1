@@ -19,4 +19,4 @@ public class Main {
         smartphone1.computerOnOrOff(true);
         smartphone1.operatingSystemInfo();
     }
-}
+};
