@@ -1,30 +1,22 @@
 
 public class Main {
+    public static void main(String[] args) {
+        // Create a Laptop object
+        Laptop laptop1 = new Laptop("Lenovo", 2020, 512, true);
 
-        public static void main(String[] args) {
-            System.out.println("Hello world!");
+        // Call the methods on the Laptop object
+        laptop1.computerInfo();
+        laptop1.computerOnOrOff(true);
+        laptop1.touchScreenInfo();
 
-            Laptop laptop = new Laptop("Dell", "Inspiron", 2020, 15.6f);
-            laptop.displayBrandAndModel();
-            laptop.displayScreenSize();
+        System.out.println("");
 
-            SmartPhone smartphone = new SmartPhone("Apple", "iPhone", 2022, "iOS");
-            smartphone.displayBrandAndModel();
-            smartphone.displayOperatingSystem();
+        // Create a SmartPhone object
+        SmartPhone smartphone1 = new SmartPhone("iPhone", 2022, 256, "iOS");
 
-
-        }
-
-    private static class SmartPhone {
-        public SmartPhone(String apple, String iPhone, int i, String iOS) {
-        }
-
-        public void displayOperatingSystem() {
-            
-        }
-
-        public void displayBrandAndModel() {
-        }
+        // Call the methods on the SmartPhone object
+        smartphone1.computerInfo();
+        smartphone1.computerOnOrOff(true);
+        smartphone1.operatingSystemInfo();
     }
 }
-

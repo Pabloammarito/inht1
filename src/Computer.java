@@ -1,21 +1,32 @@
 public class Computer {
 
 
-    public String brand;
-    public String model;
-    public int year;
+        // Properties
+        public String name;
+        public int year;
+        public int storage;
 
-    public  Computer (String brand, String model, int year) {
-        this.brand = brand;
-        this.model = model;
-        this.year = year;
+        // Constructor
+        public Computer(String name, int year, int storage) {
+            this.name = name;
+            this.year = year;
+            this.storage = storage;
+        }
+
+        // Methods
+        public void computerInfo() {
+            System.out.println("Name: " + name);
+            System.out.println("Year: " + year);
+            System.out.println("Storage: " + storage + "GB");
+        }
+
+        public void computerOnOrOff(boolean onOrOff) {
+            if (onOrOff) {
+                System.out.println(name + " is on");
+            } else {
+                System.out.println(name + " is off");
+            }
+        }
     }
 
-    public void displayBrandAndModel() {
-        System.out.println("Brand: " + this.brand + "\nModel: " + this.model + "\nYear: " + this.year);
-    }
 
-    public void displayYear() {System.out.println("Year: " + this.year);
-    }
-
-}

@@ -1,23 +1,20 @@
 
+class Laptop extends Computer {
+    // Additional property
+    private boolean hasTouchScreen;
 
-    public class Laptop extends Computer{
+    // Constructor
+    public Laptop(String name, int year, int storage, boolean hasTouchScreen) {
+        super(name, year, storage);
+        this.hasTouchScreen = hasTouchScreen;
+    }
 
-        public String brand;
-        public String model;
-        public int year;
-
-        public float screenSize;
-
-        public Laptop(String brand, String model, int year, float screenSize){
-            super(brand, model, year);
-            this.screenSize = screenSize;
-        }
-
-        public void displayBrandAndModel() {
-            System.out.println("Brand: " + this.brand + "\nModel: " + this.model + "\nYear: " + this.year);
-        }
-
-        public void displayScreenSize () {
-            System.out.println("Screen size: " + this.screenSize + " inches");
+    // Additional method
+    public void touchScreenInfo() {
+        if (hasTouchScreen) {
+            System.out.println(name + " has a touch screen");
+        } else {
+            System.out.println(name + " does not have a touch screen");
         }
     }
+}
